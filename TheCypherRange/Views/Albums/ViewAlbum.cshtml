@@ -1,0 +1,34 @@
+﻿@model Albums
+
+<h3>@Model.AlbumName Info...</h3>
+
+<table class="table">
+    <tr>
+        <th>AlbumID</th>
+        <th>AlbumName</th>
+        <th>ReleaseYear</th>
+        <th>Artist</th>
+        <th>Price</th>
+               
+    </tr>
+    <tr>
+        <td>@Model.AlbumID</td>
+        <td>@Model.AlbumName</td>
+        <td>@Model.ReleaseYear</td>   
+        <td>@Model.Artist</td>
+        <td>@Model.Price</td>
+    </tr>
+</table>
+
+<div style="display: block">
+    <a href="/Albums/UpdateAlbum/@Model.AlbumID" class="Update">Update this Album</a>
+</div>
+
+<div style="display: block">
+
+    @using (Html.BeginForm("DeleteAlbum", "Albums", "Post"))
+    {
+        <input type="hidden" asp-for="AlbumID" value="@Model.AlbumID" />
+        <input type="submit" onclick="return confirm('Are you sure?')" class ="Delete" value="Delete this Album" />
+    }
+</div>

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Albums>
+
+<h5> Current Selections ... </h5>
+
+   <div style="display: block">
+     <a href="/Albums/InsertAlbum/" class="CreateNew" >Create New Album</a>
+     
+ </div>
+
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>AlbumName</th>
+        <th>ReleaseYear</th>
+        <th>Artist</th>
+        <th>Price</th>
+        
+    </tr>
+
+    @foreach (var albums in @Model)
+    {
+        <tr>
+            <td><a href=/Albums/ViewAlbum/@albums.AlbumID class="ID">@albums.AlbumID</a></td>
+            <td>@albums.AlbumName</td>
+            <td>@albums.ReleaseYear</td>         
+            <td>@albums.Artist</td>
+            <td>@albums.Price</td>
+                      
+        </tr>
+    }
+
+</table>

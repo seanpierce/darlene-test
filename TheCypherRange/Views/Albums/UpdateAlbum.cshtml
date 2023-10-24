@@ -1,0 +1,22 @@
+﻿@model Albums
+
+<h7>Update @Model.AlbumName</h7>
+
+@using (Html.BeginForm("UpdateAlbumToDatabase", "Albums", "Post"))
+{
+    <input asp-for="AlbumID" type="hidden" value="@Model.AlbumID" />
+
+    <label asp-for="AlbumName" class="control-label">AlbumName</label>
+    <input type="text" name="AlbumName" class="form-control" value="@Model.AlbumName" />
+
+    <label asp-for="ReleaseYear" class="control-label">ReleaseYear</label>
+    <input type="text" name="ReleaseYear" class="form-control" value="@Model.ReleaseYear"/>
+
+    <label asp-for="Artist" class="control-label">Artist</label>
+    <input type="text" name="Artist" class="form-control" value="@Model.Artist"/>
+
+    <label asp-for="Price" class="control-label">Price</label>
+    <input type="number" step="0.01" name="Price" class="form-control" value="@Model.Price" />
+
+    <input type="submit" value="Update Album" class="btn btn-primary" />
+}

@@ -1,0 +1,338 @@
+@font-face {
+    font-family: "My Font";
+    src: url('./my-font.otf') format("opentype");
+    src: url('./my-font.ttf') format('truetype');
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+  }
+
+h1 {
+    font-family: "My Font";
+    font-size: 160px;
+    text-shadow: 5px 2px 3px white;
+    color: deepskyblue;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+
+body {
+    background: url("https://i.gifer.com/7Hzf.gif") no-repeat center center fixed;
+    background-size: cover;   
+}
+
+h2 {
+    font-family: "My Font";
+    font-size: 25px;
+    text-shadow: 4px 4px 1px black;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+    
+
+h3 {
+    color: black;
+    font-family: "My Font";
+    font-size: 40px;
+    text-shadow: 3px 7px 7px black;
+    color: deepskyblue;
+    text-shadow: 3px 3px 3px white;
+    margin-left: 7rem;
+    margin-top: 10rem;
+}
+
+a {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px deepskyblue solid;
+    border-radius: 4px;
+    padding: 3px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.03s;
+ }
+
+
+container a{
+    margin-left: 3rem;
+}
+
+a:hover {
+    border: solid 1px black;
+    color: deepskyblue;
+}
+
+div.container{
+    color:deepskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px white;    
+    margin-left: 3rem;
+}
+
+
+.container-fluid {
+    font-family: "My Font";
+    font-size: 20px;
+    text-shadow: 3px 2px 1px white;
+    padding: 3px 3px;
+    background-color: transparent;
+}
+
+.container-fluid a {
+    border: none;  
+}
+
+.container a {
+    margin-left: 3rem;
+}
+
+ .navbar-brand{
+    color: deepskyblue;
+    font-size: 50px;
+}
+
+ table.table{
+     background-color: rgba(255, 255, 255, 0.5);
+     font-weight: bold;
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 17px;
+     margin-left: 7rem;
+}
+
+ table a {
+     background: none;
+     color: black;
+     cursor: pointer;
+     border: none;
+ }
+
+footer > .container > a {
+    color: deepskyblue;
+    background: none;
+    border: none;
+    font-size: 20px; 
+}
+
+form input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px deepskyblue solid;
+    border-radius: 4px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px 5px;
+}
+
+
+.btn-primary {
+    font-family: "My Font";
+    text-shadow: 3px 2px 1px deepskyblue;
+    font-size: 20px;
+    border-width: 0px;
+    background-color: transparent;
+    margin-left: 12rem;
+    margin-top: 1rem;
+}
+
+.btn.btn-primary{
+    margin-left: 28rem;
+}
+ 
+.btn:hover{
+  
+    background-color: black;
+    transform: scale(1.3);
+    color: hotpink;
+}
+
+a.nav-link.text-dark{
+    color: black;
+    font-family: "My Font";
+    margin-right: 0rem;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: transparent;
+}
+
+element.style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1000%;
+}
+
+
+.form-control {
+    background-color: lightgray;
+}
+
+.nav-link.text-dark {
+    font-family: "My Font";
+    font-size: 25px;
+}
+
+/*Insert album info here title */
+h4{
+    font-family: "My Font";
+    color:deepskyblue;
+    text-shadow: 3px 4px 2px black;
+    margin: 1px 0px 1px;
+    font-size: 45px;    
+    margin-left: 20rem;
+    padding: 0rem;
+}
+ 
+label.control-label{
+    font-size: 18px;
+    margin: 19px 0px 0px 80px;
+    margin-top: 1rem;
+    padding: 0rem;
+    color: deepskyblue;
+   
+}
+
+form{
+    margin-top: 0rem;
+    margin-right: 30rem;
+    margin-left: 18rem;
+}
+
+h5 {
+    font-family: "My Font";
+    font-size: 40px;
+    color: white;
+    text-shadow: 5px 1px 1px deepskyblue;
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
+/*Privacy Policy*/
+h6{
+   font-size: 100px;
+   font-family: 'Decipher PERSONAL USE';
+   text-shadow: 4px 1px 1px white;
+   margin-top:2rem;
+   margin-left: 8rem;
+}
+
+p{
+    margin-left: 9rem;
+}
+
+a.privacy {
+    margin-left: 0rem;
+}
+
+a.CreateNew{
+    margin-left: 6rem;
+    font-weight:600;
+}
+
+input.form-control{
+    margin-left: 15rem;
+    margin-top: 1rem;
+    padding: 4px 9px;   
+}
+
+label.control-label {
+    margin-left: 15rem;
+    margin-top: 2rem;
+    font-size: 20px;
+    font-size: 25px;
+    font-family: "My Font";
+    color: white;
+    text-shadow: 4px 3px 1px deepskyblue;
+}
+
+a.Update{
+    margin-left: 7rem;
+    font-family: "My Font";  
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: deepskyblue
+}
+
+a.Update:hover{
+    color: hotpink;
+}
+
+input.Delete{
+    margin-top: 2rem;
+    font-family: "My Font";
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: deepskyblue;
+    text-shadow: 2px 2px 1px white;   
+  
+}
+
+/*this controls the position of the delete button in update*/
+form{
+    margin-left: 7rem;   
+}
+
+input.Delete:hover{
+    color: firebrick;
+    transform: scale(1.3);
+}
+
+/*create new album button*/
+div{
+    margin-left: 1rem;
+}
+
+
+ /*Title Update form page*/
+h7{ 
+    font-size: 30px;
+    font-family: "My Font";
+    margin: 1rem;
+    text-shadow: 3px 2px 1px black;
+    margin-left: 22rem;
+    text-align: center;
+    margin-top: 5rem;  
+}
+
+a.ID{
+    margin-left: 0rem;
+}
+
+h8 {
+    font-family: "My Font";
+    font-size: 160px;
+    text-align: center;
+    text-shadow: 5px 5px 3px white;
+}
+   h9{
+       font-family: 'Decipher Symbols'
+   }
